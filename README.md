@@ -2,7 +2,7 @@
 Automatically create a README.md when you save your jupyter notebook.
 Note: pictures will not be created for this version
 
-Jupyter canbe [set up](https://jupyter-notebook.readthedocs.io/en/stable/config.html) for jupyter) to run many funcitons automatically, and it has a lot of hooks can be user. For example, `FileContentsManager.post_save_hook`  is called after your file is saved. We gonna use this hook to create a markdown file README.md every time you save your jupyter notebook.
+Jupyter can be [set up](https://jupyter-notebook.readthedocs.io/en/stable/config.html) to run many funcitons automatically, and it has a lot of hooks can be used. For example, `FileContentsManager.post_save_hook`  is called after your file is saved. We gonna use this hook to create a markdown file README.md every time you save your jupyter notebook.
 
 > create a configure file if you have not
 ```
