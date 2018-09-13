@@ -19,10 +19,8 @@ from nbconvert.writers import FilesWriter
 
 _md_exporter = None
 
-def script_post_save(model, os_path, contents_manager, **kwargs):
-    """convert notebooks to Python script after save with nbconvert
-    replaces `ipython notebook --script`
-    """
+def md_post_save(model, os_path, contents_manager, **kwargs):
+    """convert notebooks to markdown README.md after save with nbconvert"""
     from nbconvert.exporters.markdown import MarkdownExporter
     log = contents_manager.log
 
@@ -43,7 +41,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
 
     log.info("Saving README.md & dependencies files%s", os.path.dirname(os_path))
 
-c.FileContentsManager.post_save_hook = script_post_save
+c.FileContentsManager.post_save_hook = md_post_save
 ```
 
 Try restart your jupyter server, and save your jupyter file, you will see a README.md is created with the same content. 
