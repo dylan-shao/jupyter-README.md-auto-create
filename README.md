@@ -2,7 +2,7 @@
 Automatically create a README.md when you save your jupyter notebook. (Will also create images if your jupyter notebook have images in there, for example matplotlib plots)
 
 ## Why
-I am using github to version control all my jupyter related work, and README.md is rendered automatically on github. So instead of click `export to markdown` or run a `nbconvert` command every time, I created the a function which will be called every time after you save your notebook, and so create a README.md automatically. 
+I am using github to version control all my jupyter related work, and README.md is rendered automatically on github. So instead of click `export to markdown` or run a `nbconvert` command every time, I created the a function which will be called to create a README.md automatically every time after you save your notebook. 
 
 ## How it works
 
