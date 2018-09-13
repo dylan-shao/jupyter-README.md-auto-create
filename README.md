@@ -1,7 +1,14 @@
 # jupyter2README.md-auto-create
 Automatically create a README.md when you save your jupyter notebook. (Will also create images if your jupyter notebook have images in there, for example matplotlib plots)
 
+## Why
+I am using github to version control all my jupyter related work, and README.md is rendered automatically on github. So instead of click `export to markdown` or run a `nbconvert` command every time, I created the a function which will be called every time after you save your notebook, and so create a README.md automatically. 
+
+## How it works
+
 Jupyter can be [set up](https://jupyter-notebook.readthedocs.io/en/stable/config.html) to run many funcitons automatically, and it has a lot of hooks can be used. For example, `FileContentsManager.post_save_hook`  is called after your file is saved. We gonna use this hook to create a markdown file README.md every time you save your jupyter notebook.
+
+## What should I do
 
 > create a configure file if you have not
 ```
@@ -44,4 +51,4 @@ def md_post_save(model, os_path, contents_manager, **kwargs):
 c.FileContentsManager.post_save_hook = md_post_save
 ```
 
-Try restart your jupyter server, and save your jupyter file, you will see a README.md is created with the same content. 
+Try restart your jupyter server, and save your jupyter notebook, you will see a README.md is created. 
