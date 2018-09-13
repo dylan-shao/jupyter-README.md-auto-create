@@ -1,5 +1,5 @@
 # jupyter-README.md-auto-create
-Automatically create a README.md when you save your jupyter notebook. (Will also create the images if your jupyter notebook have image like matplotlib plots)
+Automatically create a README.md when you save your jupyter notebook. (Will also create images if your jupyter notebook have images in there, for example matplotlib plots)
 
 Jupyter can be [set up](https://jupyter-notebook.readthedocs.io/en/stable/config.html) to run many funcitons automatically, and it has a lot of hooks can be used. For example, `FileContentsManager.post_save_hook`  is called after your file is saved. We gonna use this hook to create a markdown file README.md every time you save your jupyter notebook.
 
