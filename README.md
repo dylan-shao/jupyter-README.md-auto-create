@@ -1,2 +1,2 @@
-# jupyter-README.md-auto-create
-Create a README.md when you save your jupyter (Building)
+# jupyter-README.md-auto-create (Building)
+Automatically create a README.md when you save your jupyter notebook.
